@@ -11,7 +11,7 @@ app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Replace this with your API key from Google Cloud
-API_KEY = "AIzaSyAIz_0hYdKbgrGYhn5NdXhLZrzmMaEKmOE"
+API_KEY = ""
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
